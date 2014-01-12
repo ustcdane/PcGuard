@@ -1,0 +1,11 @@
+; RegHook.def : Declares the module parameters for the DLL.
+
+LIBRARY      "RegHook"
+DESCRIPTION  'RegHook Windows Dynamic Link Library'
+EXPORTS
+    ; Explicit exports can go here
+	InstallHook
+	UninstallHook
+	SetFilter
+	SetHookFunction
+	SetExplorerPID

@@ -1,0 +1,248 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FileMonitor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FILEMONITOR_DIALOG DIALOGEX 0, 0, 427, 237
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "FileMonitor"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,4,413,226
+    CONTROL         "List4",IDC_LIST,"SysListView32",WS_BORDER | WS_TABSTOP,
+                    7,79,413,151
+    PUSHBUTTON      "清除列表",IDC_BUTTON_CLEAR,225,55,50,14
+    PUSHBUTTON      "保存记录",IDC_BUTTON_SAVE,288,55,50,14
+    PUSHBUTTON      "停止监视",IDC_BUTTON_STOP,159,55,50,14
+    PUSHBUTTON      "开始监视",IDC_BUTTON_START,81,55,50,14
+    PUSHBUTTON      "浏览",IDC_BTN_BROWSE,346,23,43,14
+    PUSHBUTTON      "设置",IDC_BUTTON_SET,29,47,39,26,BS_ICON | BS_BOTTOM
+    EDITTEXT        IDC_EDIT_PATHNAME,17,23,296,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "导出记录",IDC_BUTTON_EXPORT,357,55,50,14
+    LTEXT           "请选择要监视的目录:",IDC_STATIC_PATH,18,11,244,8
+    LTEXT           "",IDC_STATIC_LOG,325,11,95,8
+    LTEXT           "设 置",IDC_STATIC,16,51,9,23
+END
+
+IDD_DIALOG_SET DIALOG DISCARDABLE  0, 0, 187, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 10, "宋体"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,0,19,180,64
+    LTEXT           "           请选择你要监视的内容",IDC_STATIC,2,6,178,9
+    CONTROL         "监视新增文件",IDC_CHECK_ADD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,29,64,10
+    CONTROL         "监视文件名",IDC_CHECK_RENAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,45,56,10
+    CONTROL         "监视删除文件",IDC_CHECK_DELETE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,99,31,64,10
+    CONTROL         "监视文件属性",IDC_CHECK_ATTRIBUTE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,99,47,64,10
+    CONTROL         "监视写入时间",IDC_CHECK_TIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,60,64,10
+    CONTROL         "监视其它",IDC_CHECK_OTHER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,99,62,48,10
+    PUSHBUTTON      "确定",IDC_BT_SURE,52,88,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "FileMonitor Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FileMonitor\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2011\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FileMonitor.EXE\0"
+            VALUE "ProductName", "FileMonitor 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_FILEMONITOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 420
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 230
+    END
+
+    IDD_DIALOG_SET, DIALOG
+    BEGIN
+        RIGHTMARGIN, 180
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "R"
+    BEGIN
+        MENUITEM "转到此文件处",                IDM_OPEN
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Green.ico"
+IDI_ICON_SET            ICON    DISCARDABLE     "res\\set.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\d.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "res\\Master.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 FileMonitor(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\FileMonitor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

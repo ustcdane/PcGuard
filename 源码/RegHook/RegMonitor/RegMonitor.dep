@@ -1,0 +1,33 @@
+# Microsoft Developer Studio Generated Dependency File, included by RegMonitor.mak
+
+.\RegMonitor.cpp : \
+	"..\RegHook.h"\
+	".\RegMonitor.h"\
+	".\RegMonitorDlg.h"\
+	"c:\program files\microsoft sdk\include\winternl.h"\
+	
+
+.\RegMonitor.rc : \
+	".\res\regf.ico"\
+	".\res\RegMonitor.rc2"\
+	
+
+.\RegMonitorDlg.cpp : \
+	"..\RegHook.h"\
+	".\RegMonitor.h"\
+	".\RegMonitorDlg.h"\
+	"c:\program files\microsoft sdk\include\winternl.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	"c:\program files\microsoft sdk\include\basetsd.h"\
+	"c:\program files\microsoft sdk\include\guiddef.h"\
+	"c:\program files\microsoft sdk\include\propidl.h"\
+	"c:\program files\microsoft sdk\include\reason.h"\
+	"c:\program files\microsoft sdk\include\shldisp.h"\
+	"c:\program files\microsoft sdk\include\shobjidl.h"\
+	"c:\program files\microsoft sdk\include\shtypes.h"\
+	"c:\program files\microsoft sdk\include\stralign.h"\
+	"c:\program files\microsoft sdk\include\tvout.h"\
+	

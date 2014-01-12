@@ -1,0 +1,3 @@
+1，jsp 的文件名不能大写
+2，jsp中别忘了<%@ page language="java" pageEncoding="gb2312"%>
+3，http://hi.baidu.com/gakaining/blog/item/5b7f85ffdf773e395c600882.html

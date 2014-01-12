@@ -1,0 +1,273 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\VirusKiller.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\safe.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\krdc.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\download_manager.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\networkexplorer.dll_I006b_0409.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VIRUSKILLER_DIALOG DIALOGEX 0, 0, 424, 280
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "VirusKiller"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,0,14,424,250
+    GROUPBOX        "",IDC_STATIC,0,0,424,40
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 326, 166
+STYLE WS_CHILD
+FONT 11, "华文楷体"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,0,0,325,31
+    PUSHBUTTON      "选择目录",IDC_BUTTON_SELECT,117,10,39,14
+    EDITTEXT        IDC_EDIT_PATH,8,11,105,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "开始查杀",IDC_BUTTON_START,166,10,39,14
+    LTEXT           "",IDC_STATIC_TOTAL,7,142,83,14
+    LTEXT           "",IDC_STATIC_VIR_NUM,124,145,64,11
+    LTEXT           "",IDC_STATIC_KILLED_NUM,205,144,54,8
+    LTEXT           "",IDC_STATIC_ERR,266,144,53,8
+    PUSHBUTTON      "停止查杀",IDC_BUTTON_STOP,218,10,39,14,BS_NOTIFY
+    EDITTEXT        IDC_EDIT_SCAN,0,31,325,24,ES_MULTILINE | ES_READONLY
+    EDITTEXT        IDC_EDIT_SAFE,0,55,325,18,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "List1",IDC_LIST1,"SysListView32",WS_BORDER | WS_TABSTOP,
+                    0,76,325,61
+    PUSHBUTTON      "清空可疑列表",IDC_BUTTON_CLEAR,264,10,48,14
+END
+
+IDD_DIALOG_UPGRADE DIALOGEX 0, 0, 312, 163
+STYLE WS_CHILD
+FONT 12, "华文楷体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",id_static,142,0,165,163
+    LTEXT           "病毒名称:",IDC_STATIC_VIRUS_NAME,164,13,35,8
+    LTEXT           "特征码长度:",IDC_STATIC_LEN,164,36,44,8
+    LTEXT           "病毒扩展名:",IDC_STATIC_EXTNAME,164,59,45,8
+    LTEXT           "特征码内容:",IDC_STATIC_VIRUS_DATA,163,113,44,8
+    EDITTEXT        IDC_EDIT_VIRUS_NAME,207,12,97,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LEN,207,32,95,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EXTNAME,207,56,95,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VIRUS_DATA,207,110,94,14,ES_AUTOHSCROLL
+    LTEXT           "偏移量:",IDC_STATIC_OFFSET,164,86,39,8
+    EDITTEXT        IDC_EDIT_OFFSET,207,82,98,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_BUTTON_OK,164,135,43,14
+    LTEXT           "下载更新:",IDC_STATIC_UP,1,9,35,11,SS_NOTIFY,
+                    WS_EX_TRANSPARENT
+    ICON            IDI_ICON2,IDC_STAT_UP,40,8,20,20,SS_NOTIFY
+    PUSHBUTTON      "发送邮件",IDC_BUTTON_MAIL,14,135,128,14,BS_CENTER | 
+                    BS_NOTIFY,WS_EX_ACCEPTFILES
+    CTEXT           "自 定 义 查 杀 ->",IDC_STATIC,83,9,59,8
+    LTEXT           "问题求解？",IDC_STATIC,1,116,8,32
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 309, 186
+STYLE WS_CHILD
+FONT 10, "华文楷体"
+BEGIN
+    GROUPBOX        "功能大全",IDC_STATIC,0,2,115,182,BS_CENTER
+    PUSHBUTTON      "高级安全防火墙",IDC_BUTTON_FIREWALL,17,15,64,14
+    PUSHBUTTON      "系统配置",IDC_BUTTON_SYS_CONFIG,17,38,64,14
+    PUSHBUTTON      "计算机性能监测",IDC_BUTTON_PER,17,84,64,14
+    PUSHBUTTON      "IP地址侦测器",IDC_BUTTON_NSLOOKUP,18,130,64,14
+    PUSHBUTTON      "计算机管理",IDC_BUTTON_COMPUTER,17,61,64,14
+    PUSHBUTTON      "放大镜",IDC_BUTTON_magnify,19,153,64,14
+    PUSHBUTTON      "本地服务设置",IDC_BUTTON_SERVICE,17,107,64,14
+    GROUPBOX        "e",IDC_STATIC,137,2,172,182,BS_CENTER
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "VirusKiller Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "VirusKiller\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2011\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "VirusKiller.EXE\0"
+            VALUE "ProductName", "VirusKiller 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 325
+    END
+
+    IDD_DIALOG_UPGRADE, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 184
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "M"
+    BEGIN
+        MENUITEM "转到此文件处",                ID_MENUE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "删除此文件",                  ID_MENUE_DEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 VirusKiller(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\VirusKiller.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

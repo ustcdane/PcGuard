@@ -1,0 +1,35 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ProcessManage - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/ProcessManage.res" /d "NDEBUG" "E:\VC_Projects\软件设计-计算机-网络08-2-王丹-PcGuard\源码\ProcessManage\ProcessManage.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP97B4.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/ProcessManage.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\VC_Projects\软件设计-计算机-网络08-2-王丹-PcGuard\源码\ProcessManage\ProcessManageDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP97B4.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/ProcessManage.pdb" /machine:I386 /out:"Release/ProcessManage.exe"  ".\Release\ProcessManage.obj" ".\Release\ProcessManageDlg.obj" ".\Release\StdAfx.obj" ".\Release\ProcessManage.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+ProcessManageDlg.cpp
+E:\VC_Projects\软件设计-计算机-网络08-2-王丹-PcGuard\源码\ProcessManage\ProcessManageDlg.h(12) : fatal error C1083: Cannot open include file: 'psapi.h': No such file or directory
+Error executing cl.exe.
+Creating command line "bscmake.exe /nologo /o"Release/ProcessManage.bsc"  ".\Release\StdAfx.sbr" ".\Release\ProcessManage.sbr" ".\Release\ProcessManageDlg.sbr""
+Creating browse info file...
+BSCMAKE: error BK1506 : cannot open file '.\Release\ProcessManageDlg.sbr': No such file or directory
+Error executing bscmake.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ProcessManage.exe - 2 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

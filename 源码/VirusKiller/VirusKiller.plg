@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VirusKiller - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\wang\AppData\Local\Temp\RSP15F6.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/VirusKiller.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\VC_Projects\软件设计-计算机-网络08-2-王丹-PcGuard\源码\VirusKiller\KillerDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\wang\AppData\Local\Temp\RSP15F6.tmp" 
+Creating temporary file "C:\Users\wang\AppData\Local\Temp\RSP15F7.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/VirusKiller.pdb" /machine:I386 /out:"Release/VirusKiller.exe" 
+".\Release\GuardDlg.obj"
+".\Release\KillerDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\UpgradeDlg.obj"
+".\Release\VirusKiller.obj"
+".\Release\VirusKillerDlg.obj"
+".\Release\VirusKiller.res"
+]
+Creating command line "link.exe @C:\Users\wang\AppData\Local\Temp\RSP15F7.tmp"
+<h3>Output Window</h3>
+Compiling...
+KillerDlg.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Release/VirusKiller.bsc"  ".\Release\StdAfx.sbr" ".\Release\GuardDlg.sbr" ".\Release\KillerDlg.sbr" ".\Release\UpgradeDlg.sbr" ".\Release\VirusKiller.sbr" ".\Release\VirusKillerDlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+VirusKiller.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
